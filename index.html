@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mi Navegador Launcher</title>
+<style>
+body{background:#0f172a;color:white;font-family:Arial;text-align:center}
+input,button{padding:10px;margin:10px}
+a{color:#00ffcc;display:block;margin:8px}
+</style>
+</head>
+<body>
+
+<h1>🌐 Mi Launcher</h1>
+
+<input id="url" placeholder="https://ejemplo.com">
+<button onclick="abrir()">Abrir</button>
+
+<div id="links"></div>
+
+<script>
+function abrir(){
+    let url=document.getElementById("url").value;
+    window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>
